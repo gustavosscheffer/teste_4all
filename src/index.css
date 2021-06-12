@@ -3,7 +3,7 @@ body {
   font-family: 'Nunito Sans';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #292929;
+  background: #292929 url('./assets/images/background.svg') 0% 0% no-repeat padding-box;
 }
 
 code {
