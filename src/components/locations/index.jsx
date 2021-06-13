@@ -18,7 +18,7 @@ function Locations({ name, amount }) {
 
     return (
         <Grid container spacing={0}>
-            <Grid item xs={10}>
+            <Grid item xs={10} md={11}>
                 <Card className={classes.card} onClick={handleClick}>
                     <Grid container spacing={2}>
                         <Grid item xs={12}>
@@ -34,7 +34,7 @@ function Locations({ name, amount }) {
                     </Grid>
                 </Card>
             </Grid>
-            <Grid item xs={2} className={classes.grid_align}>
+            <Grid item xs={2} md={1} className={classes.grid_align}>
                 <IconButton className={classes.icon_button} onClick={handleClickIconButton}>
                     <AddIcon />
                 </IconButton>

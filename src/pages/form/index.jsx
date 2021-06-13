@@ -2,6 +2,7 @@ import { Grid, Button } from '@material-ui/core';
 import React from 'react';
 import Logo from '../../components/logo';
 import Title from '../../components/title';
+import CurrencyInput from 'react-currency-input'
 import { useStyles } from './styles'
 
 function Forms() {
@@ -26,7 +27,7 @@ function Forms() {
                 <div className={classes.label}>
                     Valor
                 </div>
-                <input defaultValue="0,00" className={classes.inputs} type="number" min="0.00" max="10000.00" step="0.01" />
+                <CurrencyInput prefix="R$" value="20.00" decimalSeparator="," className={classes.inputs}/>
             </Grid>
             <Grid item xs={12}>
                 <div className={classes.label}>
@@ -37,7 +38,7 @@ function Forms() {
                     *A descrição deve conter até 200 caracteres
                 </div>
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={12} style={{ textAlign: "center" }}>
                 <Button className={classes.button_save}>
                     Salvar
                 </Button>

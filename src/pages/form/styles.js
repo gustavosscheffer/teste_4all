@@ -16,18 +16,14 @@ export const useStyles = makeStyles({
     inputs: {
         width: "100%",
         height: "38px",
-        background: "#FFFFFF 0% 0% no-repeat padding-box ",
         border: "1px solid #DEDEDF ",
         borderRadius: "4px",
-        padding: "8px 17px"
     },
     text_area: {
         width: "100%",
         height: "136px",
-        background: "#FFFFFF 0% 0% no-repeat padding-box ",
         border: "1px solid #DEDEDF",
         borderRadius: "4px",
-        padding: "8px 17px"
     },
     button_save: {
         backgroundColor: "#F3AA00",

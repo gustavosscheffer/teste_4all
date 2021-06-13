@@ -10,14 +10,13 @@ import Menu from '../pages/menu';
 export default function Routes() {
     return (
         <Router>
-            <div style={{padding:"20px"}}>
+            <div style={{padding:"10px"}}>
                 <Grid container>
-                    <Grid item xs={1}/>
-                    <Grid item xs={10}>
+                    <Grid item xs={1} md={3}/>
+                    <Grid item xs={10} md={6}>
                         <Switch>
                             <Route path="/">
-                                {/* <Home /> */}
-                                <Forms/>
+                                <Home />
                             </Route>
                             <Route path="/Menu">
                                 <Menu/>
@@ -27,7 +26,7 @@ export default function Routes() {
                             </Route>
                         </Switch>
                     </Grid>
-                    <Grid item xs={1}/>
+                    <Grid item xs={1} md={3}/>
                 </Grid>
             </div>
         </Router>

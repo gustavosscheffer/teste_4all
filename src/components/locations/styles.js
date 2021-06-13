@@ -28,5 +28,7 @@ export const useStyles = makeStyles({
     icon_button:{
         color:"white",
         border:"1px solid white",
+        height:"36px",
+        width:"36px"
     }
 });
