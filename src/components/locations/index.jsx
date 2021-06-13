@@ -1,14 +1,25 @@
 import { Card, Grid, IconButton } from '@material-ui/core';
-import React from 'react';
-import { useStyles } from './styles'
 import AddIcon from '@material-ui/icons/Add';
+import React from 'react';
+import { useHistory } from 'react-router-dom';
+import { useStyles } from './styles';
 
 function Locations({ name, amount }) {
     const classes = useStyles()
+    let history = useHistory();
+
+    function handleClick() {
+        history.push("/Menu");
+    }
+
+    function handleClickIconButton() {
+        history.push("/Forms");
+    }
+
     return (
         <Grid container spacing={0}>
             <Grid item xs={10}>
-                <Card className={classes.card}>
+                <Card className={classes.card} onClick={handleClick}>
                     <Grid container spacing={2}>
                         <Grid item xs={12}>
                             <div className={classes.name}>
@@ -24,7 +35,7 @@ function Locations({ name, amount }) {
                 </Card>
             </Grid>
             <Grid item xs={2} className={classes.grid_align}>
-                <IconButton className={classes.icon_button}>
+                <IconButton className={classes.icon_button} onClick={handleClickIconButton}>
                     <AddIcon />
                 </IconButton>
             </Grid>
