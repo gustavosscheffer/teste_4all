@@ -32,6 +32,9 @@ export const useStyles = makeStyles({
         width:"100%",
         '& .MuiButton-root':{
             fontWeight:"bold"
-        }
+        },
+        '&:hover': {
+            backgroundColor:"#F3AA00",
+        },
     }
 });

@@ -2,7 +2,7 @@ import { Card, Grid } from '@material-ui/core';
 import React from 'react';
 import { useStyles } from './styles';
 
-function MenuCard({name, description, price}) {
+function MenuCard({items}) {
     const classes = useStyles()
     return (
         <Grid container>
@@ -11,17 +11,17 @@ function MenuCard({name, description, price}) {
                     <Grid container spacing={2}>
                         <Grid item xs={6}>
                             <div className={classes.name}>
-                                {name}
+                                {items.name}
                             </div>
                         </Grid>
                         <Grid item xs={6} className={classes.grid_align}>
                             <div className={classes.price}>
-                                {price}
+                                {items.price}
                             </div>
                         </Grid>
                         <Grid item xs={12}>
                             <div className={classes.description}>
-                                {description}
+                                {items.description}
                             </div>
                         </Grid>
                     </Grid>

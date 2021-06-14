@@ -1,5 +1,6 @@
 [
   {
+    "id": "8b706b06-fdf6-45e4-be1f-118550e71b6c",
     "name": "Silva Lanches",
     "menuItems": [
       {
@@ -20,6 +21,7 @@
     ]
   },
   {
+    "id": "531f78b9-33fe-4f3a-b8b8-71f830deeb2c",
     "name": "Z café",
     "menuItems": [
       {
@@ -40,6 +42,7 @@
     ]
   },
   {
+    "id": "944956c3-ee54-4a80-8c37-1f67aa8c3ca7",
     "name": "Canal Café - PUCRS",
     "menuItems": [
       {
@@ -55,6 +58,7 @@
     ]
   },
   {
+    "id": "3ddcc5af-5dcc-47b6-8e8f-8fe5914b7c45",
     "name": "Palatu's - PUCRS",
     "menuItems": [
       {

@@ -4,8 +4,12 @@ import Locations from '../../components/locations';
 import Title from '../../components/title'
 import Amount from '../../components/amount'
 import Logo from '../../components/logo'
+import usePlaces from './hooks';
 
 function Home() {
+
+    const {states, actions} = usePlaces()
+    
     return (
         <div>
             <Grid container spacing={2}>
@@ -19,11 +23,13 @@ function Home() {
                 </Grid>
                 <Grid item xs={12}>
                     <Amount>
-                        6 lugares cadastrados
+                        {actions.onCountPlaces()} lugares cadastrados
                     </Amount>
                 </Grid>
                 <Grid item xs={12}>
-                    <Locations name='Silva' amount="51 pratos" />
+                    {states.places.map(place => (
+                        <Locations place={place} key={place.id} />
+                    ))}
                 </Grid>
             </Grid>
         </div>

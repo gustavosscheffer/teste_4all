@@ -15,14 +15,14 @@ export default function Routes() {
                     <Grid item xs={1} md={3}/>
                     <Grid item xs={10} md={6}>
                         <Switch>
-                            <Route path="/">
-                                <Home />
-                            </Route>
-                            <Route path="/Menu">
+                            <Route path="/Menu/:id">
                                 <Menu/>
                             </Route>
-                            <Route path="/Forms">
+                            <Route path="/Forms/:id">
                                 <Forms/>
+                            </Route>
+                            <Route path="/">
+                                <Home />
                             </Route>
                         </Switch>
                     </Grid>
